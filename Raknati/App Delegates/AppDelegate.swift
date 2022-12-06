@@ -15,7 +15,7 @@ import GoogleMaps
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     private let googleMapsApiKey: String! =
-        "AIzaSyDNFBVZR5OREBpALt7bQv-eNYSY0PS9NkA"
+        "GoogleAPIKey"
         
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
