@@ -4,10 +4,10 @@
 //
 //  Created by Shady K. Maadawy on 29/11/2022.
 //
-
+import MapKit
+import Polyline
 import Foundation
 import CoreLocation
-import UserNotifications
 
 protocol HomePresenterDelgates: AnyObject {
     func stopLocationUpdates()
@@ -245,11 +245,32 @@ extension HomeVCPresenter: CLLocationManagerDelegate {
                 let trackingCoordinate = CLLocation.init(latitude: trackingLocation.latitude, longitude: trackingLocation.longitude)
                 let cameraCoordinate = CLLocation.init(latitude: cameraLocation.latitude, longitude: cameraLocation.longitude)
                 let cameraDistanceInMeters = lastLocation.distance(from: cameraCoordinate)
-                DispatchQueue.main.async {
-                    if(cameraDistanceInMeters >= 10) {
-                        self.updateCameraLocationToCurrentLocation()
+                let sourceCoordinate = MKMapItem(placemark: .init(coordinate: lastLocation.coordinate))
+                let destinationCoordinate = MKMapItem(placemark: .init(coordinate: trackingCoordinate.coordinate))
+                let mapKitDirectionRequest = MKDirections.Request()
+                mapKitDirectionRequest.source = sourceCoordinate
+                mapKitDirectionRequest.destination = destinationCoordinate
+                mapKitDirectionRequest.transportType = .walking
+                mapKitDirectionRequest.requestsAlternateRoutes = false
+                let MKdirections = MKDirections(request: mapKitDirectionRequest)
+                MKdirections.calculate { calculateResult, calculateError in
+                    guard let calculateResult = calculateResult, calculateError == nil,
+                          let suggestedRoute = calculateResult.routes.first, self.currentTrackingStatus == .started else {
+                        return
                     }
-                    self.view?.drawRoute(lastLocation.coordinate, trackingCoordinate.coordinate)
+                    var coreLocationCoordinate = [CLLocationCoordinate2D](
+                        repeating: kCLLocationCoordinate2DInvalid,
+                        count: suggestedRoute.polyline.pointCount)
+                    suggestedRoute.polyline.getCoordinates(
+                        &coreLocationCoordinate,
+                        range: NSRange(location: 0, length: suggestedRoute.polyline.pointCount))
+                    let thirdPartyPolyine = Polyline.init(coordinates: coreLocationCoordinate)
+                    DispatchQueue.main.async {
+                        if(cameraDistanceInMeters >= 10) {
+                            self.updateCameraLocationToCurrentLocation()
+                        }
+                        self.view?.drawPolyine(thirdPartyPolyine)
+                    }
                 }
                 sleep(2)
                 self.locationTrackingSemaphore.signal()
