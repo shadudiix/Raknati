@@ -15,6 +15,7 @@ Description:
 # Desgin Pattrens used in this project: 
   * Coordinator
   * Factory
+  * Delegation
   * Dependecy Injection 
   * Repository
   * Singleton
