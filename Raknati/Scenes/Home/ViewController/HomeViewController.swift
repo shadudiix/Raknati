@@ -4,10 +4,9 @@
 //
 //  Created by Shady K. Maadawy on 28/11/2022.
 //
-import MapKit
-import Polyline
 
 import UIKit
+import Polyline
 import GoogleMaps
 
 final class HomeViewController: RaknatiBaseViewController, GMSMapViewDelegate, HomeViewDelegates {
@@ -167,40 +166,16 @@ final class HomeViewController: RaknatiBaseViewController, GMSMapViewDelegate, H
         self.googlePolyLine = nil
     }
     
-    func drawRoute(
-        _ sourceLocation: CLLocationCoordinate2D!,
-        _ destinationLocation: CLLocationCoordinate2D!) {
-            
-        let sourceCoordinate = MKMapItem(placemark: .init(coordinate: sourceLocation))
-        let destinationCoordinate = MKMapItem(placemark: .init(coordinate: destinationLocation))
-        let mapKitDirectionRequest = MKDirections.Request()
-        mapKitDirectionRequest.source = sourceCoordinate
-        mapKitDirectionRequest.destination = destinationCoordinate
-        mapKitDirectionRequest.transportType = .walking
-        mapKitDirectionRequest.requestsAlternateRoutes = false
-        let MKdirections = MKDirections(request: mapKitDirectionRequest)
-        MKdirections.calculate { calculateResult, calculateError in
-            guard let calculateResult = calculateResult, calculateError == nil,
-                  let suggestedRoute = calculateResult.routes.first, self.presenter.currentTrackingStatus == .started else {
-                return
-            }
-            var coreLocationCoordinate = [CLLocationCoordinate2D](
-                repeating: kCLLocationCoordinate2DInvalid,
-                count: suggestedRoute.polyline.pointCount)
-            suggestedRoute.polyline.getCoordinates(
-                &coreLocationCoordinate,
-                range: NSRange(location: 0, length: suggestedRoute.polyline.pointCount))
-            let thirdPartyPolyine = Polyline.init(coordinates: coreLocationCoordinate)
-            let googleMapPath = GMSPath.init(fromEncodedPath: thirdPartyPolyine.encodedPolyline)
-            if(self.googlePolyLine != nil) {
-                self.googlePolyLine?.map = nil
-                self.googlePolyLine = nil
-            }
-            self.googlePolyLine = GMSPolyline.init(path: googleMapPath)
-            self.googlePolyLine?.strokeWidth = 7.5
-            self.googlePolyLine?.spans = [.init(style: .solidColor(.systemBlue))]
-            self.googlePolyLine?.map = self.mapView
+    func drawPolyine(_ polyine: Polyline!) {
+        let googleMapPath = GMSPath.init(fromEncodedPath: polyine.encodedPolyline)
+        if(self.googlePolyLine != nil) {
+            self.googlePolyLine?.map = nil
+            self.googlePolyLine = nil
         }
+        self.googlePolyLine = GMSPolyline.init(path: googleMapPath)
+        self.googlePolyLine?.strokeWidth = 7.5
+        self.googlePolyLine?.spans = [.init(style: .solidColor(.systemBlue))]
+        self.googlePolyLine?.map = self.mapView
     }
     
 }
