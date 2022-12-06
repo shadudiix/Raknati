@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import Polyline
 import CoreLocation
 
 protocol HomeViewDelegates: AnyObject {
@@ -16,9 +17,8 @@ protocol HomeViewDelegates: AnyObject {
     func setTrackingButtonTitle(_ buttonTitle: String!)
     func setVechileMarker(_ vechileLocation: CLLocationCoordinate2D!)
     func clearMap()
-    func drawRoute(
-        _ sourceLocation: CLLocationCoordinate2D!,
-        _ destinationLocation: CLLocationCoordinate2D!)
+    func drawPolyine(
+        _ polyine: Polyline!)
 }
 
 typealias HomeDelegates = HomeViewDelegates & BaseViewControllerDelegates
