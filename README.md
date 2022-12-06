@@ -24,7 +24,7 @@ Description:
   * Firebase
   * Google Maps
   * MapKit ( For directions )
-
+  * Core Location
 
 # ScreenShots:
 
