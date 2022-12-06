@@ -8,11 +8,6 @@ Description:
 
   App name describes his job, where did I park my car? with a button click, you will save your car parking location, and can follow it easily
   
-# Techinolges used in this project:
-  * Firebase
-  * Google Maps
-  * MapKit ( For directions )
-
 # Architeture Pattren: 
 
   * MVP
@@ -24,6 +19,12 @@ Description:
   * Repository
   * Singleton
   * Adapters
+  
+# Techinolges used in this project:
+  * Firebase
+  * Google Maps
+  * MapKit ( For directions )
+
 
 # ScreenShots:
 
