@@ -1,0 +1,1060 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4136C8D4A84D37FC6286D7D8 /* Pods_Raknati.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85A0C10876B367B89992FB4E /* Pods_Raknati.framework */; };
+		613750E22932D2D600616715 /* Poppins-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 613750E12932D2D500616715 /* Poppins-Bold.ttf */; };
+		614FF1EA293289D500BAB7DE /* UIImage+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 614FF1E9293289D500BAB7DE /* UIImage+Ext.swift */; };
+		615122F92934152C0003822E /* EmailAuthenticationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 615122F82934152C0003822E /* EmailAuthenticationService.swift */; };
+		615122FC293415650003822E /* RaknatiUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 615122FB293415650003822E /* RaknatiUser.swift */; };
+		615122FE293415B30003822E /* AuthenticationViaEmailAddressAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 615122FD293415B30003822E /* AuthenticationViaEmailAddressAdapter.swift */; };
+		6151230029341ED90003822E /* SignInVCPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 615122FF29341ED90003822E /* SignInVCPresenter.swift */; };
+		61512302293424190003822E /* RaknatiBaseLoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61512301293424190003822E /* RaknatiBaseLoadingView.swift */; };
+		61512304293426830003822E /* ResetPasswordAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61512303293426830003822E /* ResetPasswordAdapter.swift */; };
+		61512306293426AD0003822E /* EmailResetService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61512305293426AD0003822E /* EmailResetService.swift */; };
+		6151230929342D370003822E /* SignInViewDelegates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6151230829342D370003822E /* SignInViewDelegates.swift */; };
+		6151230C29342D9E0003822E /* SignInViewControllerConfigrator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6151230B29342D9E0003822E /* SignInViewControllerConfigrator.swift */; };
+		61594C0D2936A770006FE793 /* RaknatiBaseSectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61594C0C2936A770006FE793 /* RaknatiBaseSectionView.swift */; };
+		61594C102936A79F006FE793 /* AppSettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61594C0F2936A79F006FE793 /* AppSettingsViewController.swift */; };
+		61641FD82933EF9E002F0C87 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 61641FD72933EF9E002F0C87 /* GoogleService-Info.plist */; };
+		617916A22935CFC50033D124 /* HomeViewControllerConfigrator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 617916A12935CFC50033D124 /* HomeViewControllerConfigrator.swift */; };
+		617916A42935CFEC0033D124 /* HomeVCPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 617916A32935CFEC0033D124 /* HomeVCPresenter.swift */; };
+		617916A62935D00C0033D124 /* HomeViewDelegates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 617916A52935D00C0033D124 /* HomeViewDelegates.swift */; };
+		618B5672293DF1FF00E5C458 /* SignUpAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 618B5671293DF1FF00E5C458 /* SignUpAdapter.swift */; };
+		618B5674293DF21000E5C458 /* EmailSignUpService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 618B5673293DF21000E5C458 /* EmailSignUpService.swift */; };
+		618B5676293DFD4F00E5C458 /* String+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 618B5675293DFD4F00E5C458 /* String+Ext.swift */; };
+		618B5678293E00B600E5C458 /* BaseErrorCodes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 618B5677293E00B600E5C458 /* BaseErrorCodes.swift */; };
+		618B567B293E030D00E5C458 /* SignUpViewDelegates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 618B567A293E030D00E5C458 /* SignUpViewDelegates.swift */; };
+		618B567E293E032400E5C458 /* SignUpVCPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 618B567D293E032400E5C458 /* SignUpVCPresenter.swift */; };
+		618B5681293E034200E5C458 /* SignUpViewControllerConfigrator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 618B5680293E034200E5C458 /* SignUpViewControllerConfigrator.swift */; };
+		618F08A6293CDF360014F602 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 618F08A5293CDF360014F602 /* AppCoordinator.swift */; };
+		618F08A8293CDF430014F602 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 618F08A7293CDF430014F602 /* Coordinator.swift */; };
+		618F08AD293CDF770014F602 /* HomeCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 618F08AC293CDF770014F602 /* HomeCoordinator.swift */; };
+		618F08AF293CDF920014F602 /* AuthenticationCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 618F08AE293CDF920014F602 /* AuthenticationCoordinator.swift */; };
+		619FC30B293C61F50011B01B /* RaknatiBaseUISwitch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 619FC30A293C61F50011B01B /* RaknatiBaseUISwitch.swift */; };
+		619FC30D293C62140011B01B /* RaknatiBaseSettingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 619FC30C293C62140011B01B /* RaknatiBaseSettingCell.swift */; };
+		619FC313293C626A0011B01B /* AppSettingsViewControllerConfigrator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 619FC312293C626A0011B01B /* AppSettingsViewControllerConfigrator.swift */; };
+		619FC315293C78F80011B01B /* AppSettingsVCPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 619FC314293C78F80011B01B /* AppSettingsVCPresenter.swift */; };
+		619FC317293C790A0011B01B /* AppSettingsVCDelegates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 619FC316293C790A0011B01B /* AppSettingsVCDelegates.swift */; };
+		619FC319293C7DBE0011B01B /* AppSettingsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 619FC318293C7DBE0011B01B /* AppSettingsManager.swift */; };
+		619FC31B293C9B4C0011B01B /* KeyboardManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 619FC31A293C9B4C0011B01B /* KeyboardManager.swift */; };
+		61A35C88293A05A200885C33 /* HomeRepositoryDelegates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61A35C87293A05A200885C33 /* HomeRepositoryDelegates.swift */; };
+		61A35C8B293A05C800885C33 /* HomeRemoteRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61A35C8A293A05C800885C33 /* HomeRemoteRepository.swift */; };
+		61A35C8F293A05F000885C33 /* HomeRepositoryManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61A35C8E293A05F000885C33 /* HomeRepositoryManager.swift */; };
+		61A35C92293A061500885C33 /* GeoLocationEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61A35C91293A061500885C33 /* GeoLocationEntity.swift */; };
+		61A35C94293A063300885C33 /* GeoLocationFirebaseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61A35C93293A063300885C33 /* GeoLocationFirebaseModel.swift */; };
+		61A429AB2938D94900CE6CF3 /* FirebaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61A429AA2938D94900CE6CF3 /* FirebaseService.swift */; };
+		61C638D22933F92400DC4E47 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61C638D12933F92400DC4E47 /* SignUpViewController.swift */; };
+		61C638D52933F94700DC4E47 /* ResetPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61C638D42933F94700DC4E47 /* ResetPasswordViewController.swift */; };
+		61C638D82933F96600DC4E47 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61C638D72933F96600DC4E47 /* SignInViewController.swift */; };
+		61C638DB2933F99200DC4E47 /* RaknatiBaseUITextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61C638DA2933F99200DC4E47 /* RaknatiBaseUITextField.swift */; };
+		61C638DD2933F9A900DC4E47 /* RaknatiBaseUIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61C638DC2933F9A900DC4E47 /* RaknatiBaseUIButton.swift */; };
+		61C638DF2933F9C100DC4E47 /* RaknatiBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61C638DE2933F9C100DC4E47 /* RaknatiBaseViewController.swift */; };
+		61C638E12933F9DB00DC4E47 /* RaknatiBaseUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61C638E02933F9DB00DC4E47 /* RaknatiBaseUIView.swift */; };
+		61C638E42933FA1F00DC4E47 /* SessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61C638E32933FA1F00DC4E47 /* SessionManager.swift */; };
+		61C658E02934670700B73236 /* ResetPasswordVCPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61C658DF2934670700B73236 /* ResetPasswordVCPresenter.swift */; };
+		61C658E32934672500B73236 /* ResetPasswordViewDelegates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61C658E22934672500B73236 /* ResetPasswordViewDelegates.swift */; };
+		61C658E62934674A00B73236 /* ResetPasswordViewControllerConfigrator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61C658E52934674A00B73236 /* ResetPasswordViewControllerConfigrator.swift */; };
+		61C658E9293470D200B73236 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61C658E8293470D200B73236 /* HomeViewController.swift */; };
+		61C9EBC3292FE63B0089C0FC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61C9EBC2292FE63B0089C0FC /* AppDelegate.swift */; };
+		61C9EBC5292FE63B0089C0FC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61C9EBC4292FE63B0089C0FC /* SceneDelegate.swift */; };
+		61C9EBCD292FE63B0089C0FC /* Raknati.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 61C9EBCB292FE63B0089C0FC /* Raknati.xcdatamodeld */; };
+		61C9EBCF292FE63D0089C0FC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 61C9EBCE292FE63D0089C0FC /* Assets.xcassets */; };
+		61C9EBD2292FE63D0089C0FC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 61C9EBD0292FE63D0089C0FC /* LaunchScreen.storyboard */; };
+		61C9EBE6292FFA600089C0FC /* Poppins-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 61C9EBE2292FFA5E0089C0FC /* Poppins-SemiBold.ttf */; };
+		61C9EBE7292FFA600089C0FC /* Poppins-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 61C9EBE3292FFA5F0089C0FC /* Poppins-ExtraLight.ttf */; };
+		61C9EBE8292FFA600089C0FC /* Poppins-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 61C9EBE4292FFA5F0089C0FC /* Poppins-Regular.ttf */; };
+		61C9EBE9292FFA600089C0FC /* Poppins-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 61C9EBE5292FFA600089C0FC /* Poppins-Light.ttf */; };
+		61C9EBEB292FFACA0089C0FC /* UIFont+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61C9EBEA292FFACA0089C0FC /* UIFont+Ext.swift */; };
+		61C9EBED293002D50089C0FC /* UIView+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61C9EBEC293002D50089C0FC /* UIView+Ext.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		613750E12932D2D500616715 /* Poppins-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Bold.ttf"; sourceTree = "<group>"; };
+		614FF1E9293289D500BAB7DE /* UIImage+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Ext.swift"; sourceTree = "<group>"; };
+		615122F82934152C0003822E /* EmailAuthenticationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailAuthenticationService.swift; sourceTree = "<group>"; };
+		615122FB293415650003822E /* RaknatiUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RaknatiUser.swift; sourceTree = "<group>"; };
+		615122FD293415B30003822E /* AuthenticationViaEmailAddressAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationViaEmailAddressAdapter.swift; sourceTree = "<group>"; };
+		615122FF29341ED90003822E /* SignInVCPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInVCPresenter.swift; sourceTree = "<group>"; };
+		61512301293424190003822E /* RaknatiBaseLoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RaknatiBaseLoadingView.swift; sourceTree = "<group>"; };
+		61512303293426830003822E /* ResetPasswordAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResetPasswordAdapter.swift; sourceTree = "<group>"; };
+		61512305293426AD0003822E /* EmailResetService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailResetService.swift; sourceTree = "<group>"; };
+		6151230829342D370003822E /* SignInViewDelegates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewDelegates.swift; sourceTree = "<group>"; };
+		6151230B29342D9E0003822E /* SignInViewControllerConfigrator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewControllerConfigrator.swift; sourceTree = "<group>"; };
+		61594C0C2936A770006FE793 /* RaknatiBaseSectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RaknatiBaseSectionView.swift; sourceTree = "<group>"; };
+		61594C0F2936A79F006FE793 /* AppSettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppSettingsViewController.swift; path = "../New Group/AppSettingsViewController.swift"; sourceTree = "<group>"; };
+		61641FD72933EF9E002F0C87 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		617916A12935CFC50033D124 /* HomeViewControllerConfigrator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewControllerConfigrator.swift; sourceTree = "<group>"; };
+		617916A32935CFEC0033D124 /* HomeVCPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVCPresenter.swift; sourceTree = "<group>"; };
+		617916A52935D00C0033D124 /* HomeViewDelegates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewDelegates.swift; sourceTree = "<group>"; };
+		618B5671293DF1FF00E5C458 /* SignUpAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpAdapter.swift; sourceTree = "<group>"; };
+		618B5673293DF21000E5C458 /* EmailSignUpService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailSignUpService.swift; sourceTree = "<group>"; };
+		618B5675293DFD4F00E5C458 /* String+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Ext.swift"; sourceTree = "<group>"; };
+		618B5677293E00B600E5C458 /* BaseErrorCodes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseErrorCodes.swift; sourceTree = "<group>"; };
+		618B567A293E030D00E5C458 /* SignUpViewDelegates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewDelegates.swift; sourceTree = "<group>"; };
+		618B567D293E032400E5C458 /* SignUpVCPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpVCPresenter.swift; sourceTree = "<group>"; };
+		618B5680293E034200E5C458 /* SignUpViewControllerConfigrator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewControllerConfigrator.swift; sourceTree = "<group>"; };
+		618F08A5293CDF360014F602 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		618F08A7293CDF430014F602 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		618F08AC293CDF770014F602 /* HomeCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCoordinator.swift; sourceTree = "<group>"; };
+		618F08AE293CDF920014F602 /* AuthenticationCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationCoordinator.swift; sourceTree = "<group>"; };
+		619FC30A293C61F50011B01B /* RaknatiBaseUISwitch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RaknatiBaseUISwitch.swift; sourceTree = "<group>"; };
+		619FC30C293C62140011B01B /* RaknatiBaseSettingCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RaknatiBaseSettingCell.swift; sourceTree = "<group>"; };
+		619FC312293C626A0011B01B /* AppSettingsViewControllerConfigrator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppSettingsViewControllerConfigrator.swift; sourceTree = "<group>"; };
+		619FC314293C78F80011B01B /* AppSettingsVCPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppSettingsVCPresenter.swift; sourceTree = "<group>"; };
+		619FC316293C790A0011B01B /* AppSettingsVCDelegates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppSettingsVCDelegates.swift; sourceTree = "<group>"; };
+		619FC318293C7DBE0011B01B /* AppSettingsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppSettingsManager.swift; sourceTree = "<group>"; };
+		619FC31A293C9B4C0011B01B /* KeyboardManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardManager.swift; sourceTree = "<group>"; };
+		61A35C87293A05A200885C33 /* HomeRepositoryDelegates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRepositoryDelegates.swift; sourceTree = "<group>"; };
+		61A35C8A293A05C800885C33 /* HomeRemoteRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRemoteRepository.swift; sourceTree = "<group>"; };
+		61A35C8E293A05F000885C33 /* HomeRepositoryManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRepositoryManager.swift; sourceTree = "<group>"; };
+		61A35C91293A061500885C33 /* GeoLocationEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeoLocationEntity.swift; sourceTree = "<group>"; };
+		61A35C93293A063300885C33 /* GeoLocationFirebaseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeoLocationFirebaseModel.swift; sourceTree = "<group>"; };
+		61A429AA2938D94900CE6CF3 /* FirebaseService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseService.swift; sourceTree = "<group>"; };
+		61C638D12933F92400DC4E47 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		61C638D42933F94700DC4E47 /* ResetPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResetPasswordViewController.swift; sourceTree = "<group>"; };
+		61C638D72933F96600DC4E47 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
+		61C638DA2933F99200DC4E47 /* RaknatiBaseUITextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RaknatiBaseUITextField.swift; sourceTree = "<group>"; };
+		61C638DC2933F9A900DC4E47 /* RaknatiBaseUIButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RaknatiBaseUIButton.swift; sourceTree = "<group>"; };
+		61C638DE2933F9C100DC4E47 /* RaknatiBaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RaknatiBaseViewController.swift; sourceTree = "<group>"; };
+		61C638E02933F9DB00DC4E47 /* RaknatiBaseUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RaknatiBaseUIView.swift; sourceTree = "<group>"; };
+		61C638E32933FA1F00DC4E47 /* SessionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionManager.swift; sourceTree = "<group>"; };
+		61C658DF2934670700B73236 /* ResetPasswordVCPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResetPasswordVCPresenter.swift; sourceTree = "<group>"; };
+		61C658E22934672500B73236 /* ResetPasswordViewDelegates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResetPasswordViewDelegates.swift; sourceTree = "<group>"; };
+		61C658E52934674A00B73236 /* ResetPasswordViewControllerConfigrator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResetPasswordViewControllerConfigrator.swift; sourceTree = "<group>"; };
+		61C658E8293470D200B73236 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		61C9EBBF292FE63B0089C0FC /* Raknati.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Raknati.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		61C9EBC2292FE63B0089C0FC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		61C9EBC4292FE63B0089C0FC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		61C9EBCC292FE63B0089C0FC /* Raknati.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Raknati.xcdatamodel; sourceTree = "<group>"; };
+		61C9EBCE292FE63D0089C0FC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		61C9EBD1292FE63D0089C0FC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		61C9EBD3292FE63D0089C0FC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		61C9EBE2292FFA5E0089C0FC /* Poppins-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-SemiBold.ttf"; sourceTree = "<group>"; };
+		61C9EBE3292FFA5F0089C0FC /* Poppins-ExtraLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-ExtraLight.ttf"; sourceTree = "<group>"; };
+		61C9EBE4292FFA5F0089C0FC /* Poppins-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Regular.ttf"; sourceTree = "<group>"; };
+		61C9EBE5292FFA600089C0FC /* Poppins-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Light.ttf"; sourceTree = "<group>"; };
+		61C9EBEA292FFACA0089C0FC /* UIFont+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+Ext.swift"; sourceTree = "<group>"; };
+		61C9EBEC293002D50089C0FC /* UIView+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Ext.swift"; sourceTree = "<group>"; };
+		6B17E57A51428AC59BF1C0C6 /* Pods-Raknati.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Raknati.debug.xcconfig"; path = "Target Support Files/Pods-Raknati/Pods-Raknati.debug.xcconfig"; sourceTree = "<group>"; };
+		85A0C10876B367B89992FB4E /* Pods_Raknati.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Raknati.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DF289BD54AE699975E9068A8 /* Pods-Raknati.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Raknati.release.xcconfig"; path = "Target Support Files/Pods-Raknati/Pods-Raknati.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		61C9EBBC292FE63B0089C0FC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4136C8D4A84D37FC6286D7D8 /* Pods_Raknati.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2213970EC57FD1EDCCAC03C3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6B17E57A51428AC59BF1C0C6 /* Pods-Raknati.debug.xcconfig */,
+				DF289BD54AE699975E9068A8 /* Pods-Raknati.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		615122F4293410A10003822E /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				61C638D72933F96600DC4E47 /* SignInViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		615122F5293410A90003822E /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				615122FF29341ED90003822E /* SignInVCPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		615122F62934151A0003822E /* Adapters */ = {
+			isa = PBXGroup;
+			children = (
+				615122F7293415220003822E /* Protcols */,
+				615122FD293415B30003822E /* AuthenticationViaEmailAddressAdapter.swift */,
+				61512303293426830003822E /* ResetPasswordAdapter.swift */,
+				618B5671293DF1FF00E5C458 /* SignUpAdapter.swift */,
+			);
+			path = Adapters;
+			sourceTree = "<group>";
+		};
+		615122F7293415220003822E /* Protcols */ = {
+			isa = PBXGroup;
+			children = (
+				615122F82934152C0003822E /* EmailAuthenticationService.swift */,
+				61512305293426AD0003822E /* EmailResetService.swift */,
+				618B5673293DF21000E5C458 /* EmailSignUpService.swift */,
+			);
+			path = Protcols;
+			sourceTree = "<group>";
+		};
+		615122FA293415580003822E /* User */ = {
+			isa = PBXGroup;
+			children = (
+				615122FB293415650003822E /* RaknatiUser.swift */,
+			);
+			path = User;
+			sourceTree = "<group>";
+		};
+		6151230729342D260003822E /* Delegates \ Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				6151230829342D370003822E /* SignInViewDelegates.swift */,
+			);
+			path = "Delegates \\ Protocol";
+			sourceTree = "<group>";
+		};
+		6151230A29342D550003822E /* Configrator */ = {
+			isa = PBXGroup;
+			children = (
+				6151230B29342D9E0003822E /* SignInViewControllerConfigrator.swift */,
+			);
+			path = Configrator;
+			sourceTree = "<group>";
+		};
+		61594C0E2936A794006FE793 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				619FC311293C62590011B01B /* Configrator */,
+				619FC310293C62510011B01B /* Presenter */,
+				619FC30F293C62430011B01B /* Delegates \ Protocol */,
+				619FC30E293C623B0011B01B /* ViewController */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		6179169D2935CF990033D124 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				61C658E8293470D200B73236 /* HomeViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		6179169E2935CFA00033D124 /* Delegates \ Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				617916A52935D00C0033D124 /* HomeViewDelegates.swift */,
+			);
+			path = "Delegates \\ Protocol";
+			sourceTree = "<group>";
+		};
+		6179169F2935CFB40033D124 /* Configrator */ = {
+			isa = PBXGroup;
+			children = (
+				617916A12935CFC50033D124 /* HomeViewControllerConfigrator.swift */,
+			);
+			path = Configrator;
+			sourceTree = "<group>";
+		};
+		617916A02935CFB70033D124 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				617916A32935CFEC0033D124 /* HomeVCPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		618B5679293E02FF00E5C458 /* Delegates \ Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				618B567A293E030D00E5C458 /* SignUpViewDelegates.swift */,
+			);
+			path = "Delegates \\ Protocol";
+			sourceTree = "<group>";
+		};
+		618B567C293E031B00E5C458 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				618B567D293E032400E5C458 /* SignUpVCPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		618B567F293E033800E5C458 /* Configrator */ = {
+			isa = PBXGroup;
+			children = (
+				618B5680293E034200E5C458 /* SignUpViewControllerConfigrator.swift */,
+			);
+			path = Configrator;
+			sourceTree = "<group>";
+		};
+		618B5682293E10CE00E5C458 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				61C638D12933F92400DC4E47 /* SignUpViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		618F08A9293CDF480014F602 /* Delegates */ = {
+			isa = PBXGroup;
+			children = (
+				618F08A7293CDF430014F602 /* Coordinator.swift */,
+			);
+			path = Delegates;
+			sourceTree = "<group>";
+		};
+		619FC30E293C623B0011B01B /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				61594C0F2936A79F006FE793 /* AppSettingsViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		619FC30F293C62430011B01B /* Delegates \ Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				619FC316293C790A0011B01B /* AppSettingsVCDelegates.swift */,
+			);
+			path = "Delegates \\ Protocol";
+			sourceTree = "<group>";
+		};
+		619FC310293C62510011B01B /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				619FC314293C78F80011B01B /* AppSettingsVCPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		619FC311293C62590011B01B /* Configrator */ = {
+			isa = PBXGroup;
+			children = (
+				619FC312293C626A0011B01B /* AppSettingsViewControllerConfigrator.swift */,
+			);
+			path = Configrator;
+			sourceTree = "<group>";
+		};
+		619FC31C293CB2F10011B01B /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				618F08A5293CDF360014F602 /* AppCoordinator.swift */,
+				618F08AE293CDF920014F602 /* AuthenticationCoordinator.swift */,
+				618F08AC293CDF770014F602 /* HomeCoordinator.swift */,
+				618F08A9293CDF480014F602 /* Delegates */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		61A35C85293A058400885C33 /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				61A35C87293A05A200885C33 /* HomeRepositoryDelegates.swift */,
+				61A35C8A293A05C800885C33 /* HomeRemoteRepository.swift */,
+				61A35C8E293A05F000885C33 /* HomeRepositoryManager.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		61A35C89293A05B700885C33 /* Models \ Entites */ = {
+			isa = PBXGroup;
+			children = (
+				61A35C90293A060A00885C33 /* Geo Location */,
+			);
+			path = "Models \\ Entites";
+			sourceTree = "<group>";
+		};
+		61A35C90293A060A00885C33 /* Geo Location */ = {
+			isa = PBXGroup;
+			children = (
+				61A35C91293A061500885C33 /* GeoLocationEntity.swift */,
+				61A35C93293A063300885C33 /* GeoLocationFirebaseModel.swift */,
+			);
+			path = "Geo Location";
+			sourceTree = "<group>";
+		};
+		61C638D02933F91400DC4E47 /* Sign Up */ = {
+			isa = PBXGroup;
+			children = (
+				618B5682293E10CE00E5C458 /* ViewController */,
+				618B567F293E033800E5C458 /* Configrator */,
+				618B567C293E031B00E5C458 /* Presenter */,
+				618B5679293E02FF00E5C458 /* Delegates \ Protocol */,
+			);
+			path = "Sign Up";
+			sourceTree = "<group>";
+		};
+		61C638D32933F93900DC4E47 /* Reset Password */ = {
+			isa = PBXGroup;
+			children = (
+				61C658E42934673700B73236 /* Configrator */,
+				61C658E12934671800B73236 /* Delegates \ Protocol */,
+				61C658DE293466FB00B73236 /* Presenter */,
+				61C658DD293466F300B73236 /* ViewController */,
+			);
+			path = "Reset Password";
+			sourceTree = "<group>";
+		};
+		61C638D62933F95E00DC4E47 /* Sign In */ = {
+			isa = PBXGroup;
+			children = (
+				6151230A29342D550003822E /* Configrator */,
+				6151230729342D260003822E /* Delegates \ Protocol */,
+				615122F5293410A90003822E /* Presenter */,
+				615122F4293410A10003822E /* ViewController */,
+			);
+			path = "Sign In";
+			sourceTree = "<group>";
+		};
+		61C638D92933F98A00DC4E47 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				61C638DC2933F9A900DC4E47 /* RaknatiBaseUIButton.swift */,
+				61C638DA2933F99200DC4E47 /* RaknatiBaseUITextField.swift */,
+				61C638E02933F9DB00DC4E47 /* RaknatiBaseUIView.swift */,
+				61C638DE2933F9C100DC4E47 /* RaknatiBaseViewController.swift */,
+				61512301293424190003822E /* RaknatiBaseLoadingView.swift */,
+				61594C0C2936A770006FE793 /* RaknatiBaseSectionView.swift */,
+				619FC30A293C61F50011B01B /* RaknatiBaseUISwitch.swift */,
+				619FC30C293C62140011B01B /* RaknatiBaseSettingCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		61C638E22933FA0800DC4E47 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				619FC318293C7DBE0011B01B /* AppSettingsManager.swift */,
+				61C638E32933FA1F00DC4E47 /* SessionManager.swift */,
+				619FC31A293C9B4C0011B01B /* KeyboardManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		61C658DD293466F300B73236 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				61C638D42933F94700DC4E47 /* ResetPasswordViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		61C658DE293466FB00B73236 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				61C658DF2934670700B73236 /* ResetPasswordVCPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		61C658E12934671800B73236 /* Delegates \ Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				61C658E22934672500B73236 /* ResetPasswordViewDelegates.swift */,
+			);
+			path = "Delegates \\ Protocol";
+			sourceTree = "<group>";
+		};
+		61C658E42934673700B73236 /* Configrator */ = {
+			isa = PBXGroup;
+			children = (
+				61C658E52934674A00B73236 /* ResetPasswordViewControllerConfigrator.swift */,
+			);
+			path = Configrator;
+			sourceTree = "<group>";
+		};
+		61C658E7293470A700B73236 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				61A35C85293A058400885C33 /* Repository */,
+				6179169F2935CFB40033D124 /* Configrator */,
+				6179169E2935CFA00033D124 /* Delegates \ Protocol */,
+				617916A02935CFB70033D124 /* Presenter */,
+				6179169D2935CF990033D124 /* ViewController */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		61C9EBB6292FE63B0089C0FC = {
+			isa = PBXGroup;
+			children = (
+				631A7E7CC4CE5E94AA977492 /* Frameworks */,
+				2213970EC57FD1EDCCAC03C3 /* Pods */,
+				61C9EBC0292FE63B0089C0FC /* Products */,
+				61C9EBC1292FE63B0089C0FC /* Raknati */,
+			);
+			sourceTree = "<group>";
+		};
+		61C9EBC0292FE63B0089C0FC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				61C9EBBF292FE63B0089C0FC /* Raknati.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		61C9EBC1292FE63B0089C0FC /* Raknati */ = {
+			isa = PBXGroup;
+			children = (
+				61C9EBD9292FE6E10089C0FC /* App Delegates */,
+				61C9EBDA292FE6F00089C0FC /* Configuration */,
+				61C9EBE0292FFA130089C0FC /* Core */,
+				61C638E22933FA0800DC4E47 /* Managers */,
+				61C9EBDB292FE70B0089C0FC /* Resources */,
+				61C9EBDC292FE7150089C0FC /* Scenes */,
+				61C9EBDE292FE7330089C0FC /* Services */,
+				61C9EBDD292FE7210089C0FC /* Storyboards */,
+				61C638D92933F98A00DC4E47 /* Views */,
+			);
+			path = Raknati;
+			sourceTree = "<group>";
+		};
+		61C9EBD9292FE6E10089C0FC /* App Delegates */ = {
+			isa = PBXGroup;
+			children = (
+				61C9EBC2292FE63B0089C0FC /* AppDelegate.swift */,
+				61C9EBC4292FE63B0089C0FC /* SceneDelegate.swift */,
+			);
+			path = "App Delegates";
+			sourceTree = "<group>";
+		};
+		61C9EBDA292FE6F00089C0FC /* Configuration */ = {
+			isa = PBXGroup;
+			children = (
+				61641FD72933EF9E002F0C87 /* GoogleService-Info.plist */,
+				61C9EBD3292FE63D0089C0FC /* Info.plist */,
+			);
+			path = Configuration;
+			sourceTree = "<group>";
+		};
+		61C9EBDB292FE70B0089C0FC /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				61C9EBCE292FE63D0089C0FC /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		61C9EBDC292FE7150089C0FC /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				61594C0E2936A794006FE793 /* Settings */,
+				61C658E7293470A700B73236 /* Home */,
+				61C638D32933F93900DC4E47 /* Reset Password */,
+				61C638D62933F95E00DC4E47 /* Sign In */,
+				61C638D02933F91400DC4E47 /* Sign Up */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		61C9EBDD292FE7210089C0FC /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				61C9EBD0292FE63D0089C0FC /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		61C9EBDE292FE7330089C0FC /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				61A429AA2938D94900CE6CF3 /* FirebaseService.swift */,
+				61C9EBCB292FE63B0089C0FC /* Raknati.xcdatamodeld */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		61C9EBDF292FFA0F0089C0FC /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				61C9EBE3292FFA5F0089C0FC /* Poppins-ExtraLight.ttf */,
+				61C9EBE5292FFA600089C0FC /* Poppins-Light.ttf */,
+				61C9EBE4292FFA5F0089C0FC /* Poppins-Regular.ttf */,
+				61C9EBE2292FFA5E0089C0FC /* Poppins-SemiBold.ttf */,
+				613750E12932D2D500616715 /* Poppins-Bold.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		61C9EBE0292FFA130089C0FC /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				61CE35ED293E400D00823FB7 /* Scene Factory */,
+				615122F62934151A0003822E /* Adapters */,
+				618B5677293E00B600E5C458 /* BaseErrorCodes.swift */,
+				619FC31C293CB2F10011B01B /* Coordinator */,
+				61C9EBE1292FFA190089C0FC /* Extensions */,
+				61C9EBDF292FFA0F0089C0FC /* Fonts */,
+				61A35C89293A05B700885C33 /* Models \ Entites */,
+				615122FA293415580003822E /* User */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		61C9EBE1292FFA190089C0FC /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				61C9EBEA292FFACA0089C0FC /* UIFont+Ext.swift */,
+				61C9EBEC293002D50089C0FC /* UIView+Ext.swift */,
+				614FF1E9293289D500BAB7DE /* UIImage+Ext.swift */,
+				618B5675293DFD4F00E5C458 /* String+Ext.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		61CE35ED293E400D00823FB7 /* Scene Factory */ = {
+			isa = PBXGroup;
+			children = (
+				61CE35EE293E401300823FB7 /* New Group */,
+			);
+			path = "Scene Factory";
+			sourceTree = "<group>";
+		};
+		61CE35EE293E401300823FB7 /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "New Group";
+			sourceTree = "<group>";
+		};
+		631A7E7CC4CE5E94AA977492 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				85A0C10876B367B89992FB4E /* Pods_Raknati.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		61C9EBBE292FE63B0089C0FC /* Raknati */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 61C9EBD6292FE63D0089C0FC /* Build configuration list for PBXNativeTarget "Raknati" */;
+			buildPhases = (
+				5A06049A7C643939C573814E /* [CP] Check Pods Manifest.lock */,
+				61C9EBBB292FE63B0089C0FC /* Sources */,
+				61C9EBBC292FE63B0089C0FC /* Frameworks */,
+				61C9EBBD292FE63B0089C0FC /* Resources */,
+				5F7675B2111443B2861840EF /* [CP] Embed Pods Frameworks */,
+				F310153C4EE00888FB933247 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Raknati;
+			productName = Raknati;
+			productReference = 61C9EBBF292FE63B0089C0FC /* Raknati.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		61C9EBB7292FE63B0089C0FC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1410;
+				LastUpgradeCheck = 1410;
+				TargetAttributes = {
+					61C9EBBE292FE63B0089C0FC = {
+						CreatedOnToolsVersion = 14.1;
+					};
+				};
+			};
+			buildConfigurationList = 61C9EBBA292FE63B0089C0FC /* Build configuration list for PBXProject "Raknati" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 61C9EBB6292FE63B0089C0FC;
+			productRefGroup = 61C9EBC0292FE63B0089C0FC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				61C9EBBE292FE63B0089C0FC /* Raknati */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		61C9EBBD292FE63B0089C0FC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				61C9EBE7292FFA600089C0FC /* Poppins-ExtraLight.ttf in Resources */,
+				61641FD82933EF9E002F0C87 /* GoogleService-Info.plist in Resources */,
+				61C9EBE9292FFA600089C0FC /* Poppins-Light.ttf in Resources */,
+				613750E22932D2D600616715 /* Poppins-Bold.ttf in Resources */,
+				61C9EBE6292FFA600089C0FC /* Poppins-SemiBold.ttf in Resources */,
+				61C9EBD2292FE63D0089C0FC /* LaunchScreen.storyboard in Resources */,
+				61C9EBCF292FE63D0089C0FC /* Assets.xcassets in Resources */,
+				61C9EBE8292FFA600089C0FC /* Poppins-Regular.ttf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5A06049A7C643939C573814E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Raknati-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5F7675B2111443B2861840EF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Raknati/Pods-Raknati-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Raknati/Pods-Raknati-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Raknati/Pods-Raknati-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F310153C4EE00888FB933247 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Raknati/Pods-Raknati-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Raknati/Pods-Raknati-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Raknati/Pods-Raknati-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		61C9EBBB292FE63B0089C0FC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				61A35C8B293A05C800885C33 /* HomeRemoteRepository.swift in Sources */,
+				6151230C29342D9E0003822E /* SignInViewControllerConfigrator.swift in Sources */,
+				61C638D52933F94700DC4E47 /* ResetPasswordViewController.swift in Sources */,
+				619FC317293C790A0011B01B /* AppSettingsVCDelegates.swift in Sources */,
+				614FF1EA293289D500BAB7DE /* UIImage+Ext.swift in Sources */,
+				618F08AF293CDF920014F602 /* AuthenticationCoordinator.swift in Sources */,
+				61512302293424190003822E /* RaknatiBaseLoadingView.swift in Sources */,
+				618B5676293DFD4F00E5C458 /* String+Ext.swift in Sources */,
+				61C638DD2933F9A900DC4E47 /* RaknatiBaseUIButton.swift in Sources */,
+				61C638D22933F92400DC4E47 /* SignUpViewController.swift in Sources */,
+				61A35C92293A061500885C33 /* GeoLocationEntity.swift in Sources */,
+				618B5672293DF1FF00E5C458 /* SignUpAdapter.swift in Sources */,
+				61512306293426AD0003822E /* EmailResetService.swift in Sources */,
+				61C638DF2933F9C100DC4E47 /* RaknatiBaseViewController.swift in Sources */,
+				618F08AD293CDF770014F602 /* HomeCoordinator.swift in Sources */,
+				6151230029341ED90003822E /* SignInVCPresenter.swift in Sources */,
+				615122FE293415B30003822E /* AuthenticationViaEmailAddressAdapter.swift in Sources */,
+				617916A62935D00C0033D124 /* HomeViewDelegates.swift in Sources */,
+				618B5674293DF21000E5C458 /* EmailSignUpService.swift in Sources */,
+				61594C102936A79F006FE793 /* AppSettingsViewController.swift in Sources */,
+				618F08A6293CDF360014F602 /* AppCoordinator.swift in Sources */,
+				61C658E02934670700B73236 /* ResetPasswordVCPresenter.swift in Sources */,
+				61A35C88293A05A200885C33 /* HomeRepositoryDelegates.swift in Sources */,
+				619FC30B293C61F50011B01B /* RaknatiBaseUISwitch.swift in Sources */,
+				61A429AB2938D94900CE6CF3 /* FirebaseService.swift in Sources */,
+				618B5678293E00B600E5C458 /* BaseErrorCodes.swift in Sources */,
+				619FC30D293C62140011B01B /* RaknatiBaseSettingCell.swift in Sources */,
+				61C9EBC3292FE63B0089C0FC /* AppDelegate.swift in Sources */,
+				61C9EBED293002D50089C0FC /* UIView+Ext.swift in Sources */,
+				615122F92934152C0003822E /* EmailAuthenticationService.swift in Sources */,
+				61C658E9293470D200B73236 /* HomeViewController.swift in Sources */,
+				619FC319293C7DBE0011B01B /* AppSettingsManager.swift in Sources */,
+				61C638E42933FA1F00DC4E47 /* SessionManager.swift in Sources */,
+				61C9EBCD292FE63B0089C0FC /* Raknati.xcdatamodeld in Sources */,
+				61C638DB2933F99200DC4E47 /* RaknatiBaseUITextField.swift in Sources */,
+				61C9EBC5292FE63B0089C0FC /* SceneDelegate.swift in Sources */,
+				61A35C8F293A05F000885C33 /* HomeRepositoryManager.swift in Sources */,
+				618F08A8293CDF430014F602 /* Coordinator.swift in Sources */,
+				61C638D82933F96600DC4E47 /* SignInViewController.swift in Sources */,
+				619FC31B293C9B4C0011B01B /* KeyboardManager.swift in Sources */,
+				618B567E293E032400E5C458 /* SignUpVCPresenter.swift in Sources */,
+				61A35C94293A063300885C33 /* GeoLocationFirebaseModel.swift in Sources */,
+				615122FC293415650003822E /* RaknatiUser.swift in Sources */,
+				61512304293426830003822E /* ResetPasswordAdapter.swift in Sources */,
+				61C658E62934674A00B73236 /* ResetPasswordViewControllerConfigrator.swift in Sources */,
+				617916A42935CFEC0033D124 /* HomeVCPresenter.swift in Sources */,
+				619FC315293C78F80011B01B /* AppSettingsVCPresenter.swift in Sources */,
+				61C658E32934672500B73236 /* ResetPasswordViewDelegates.swift in Sources */,
+				617916A22935CFC50033D124 /* HomeViewControllerConfigrator.swift in Sources */,
+				6151230929342D370003822E /* SignInViewDelegates.swift in Sources */,
+				619FC313293C626A0011B01B /* AppSettingsViewControllerConfigrator.swift in Sources */,
+				618B567B293E030D00E5C458 /* SignUpViewDelegates.swift in Sources */,
+				618B5681293E034200E5C458 /* SignUpViewControllerConfigrator.swift in Sources */,
+				61C638E12933F9DB00DC4E47 /* RaknatiBaseUIView.swift in Sources */,
+				61594C0D2936A770006FE793 /* RaknatiBaseSectionView.swift in Sources */,
+				61C9EBEB292FFACA0089C0FC /* UIFont+Ext.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		61C9EBD0292FE63D0089C0FC /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				61C9EBD1292FE63D0089C0FC /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		61C9EBD4292FE63D0089C0FC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		61C9EBD5292FE63D0089C0FC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		61C9EBD7292FE63D0089C0FC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6B17E57A51428AC59BF1C0C6 /* Pods-Raknati.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Y7A8MFWTQP;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Raknati/Configuration/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Raknati - ركناتي";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "By access your location, we can locate when you park your vechile.";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.shadudiix.Raknati;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		61C9EBD8292FE63D0089C0FC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DF289BD54AE699975E9068A8 /* Pods-Raknati.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Y7A8MFWTQP;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Raknati/Configuration/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Raknati - ركناتي";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "By access your location, we can locate when you park your vechile.";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.shadudiix.Raknati;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		61C9EBBA292FE63B0089C0FC /* Build configuration list for PBXProject "Raknati" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				61C9EBD4292FE63D0089C0FC /* Debug */,
+				61C9EBD5292FE63D0089C0FC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		61C9EBD6292FE63D0089C0FC /* Build configuration list for PBXNativeTarget "Raknati" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				61C9EBD7292FE63D0089C0FC /* Debug */,
+				61C9EBD8292FE63D0089C0FC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		61C9EBCB292FE63B0089C0FC /* Raknati.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				61C9EBCC292FE63B0089C0FC /* Raknati.xcdatamodel */,
+			);
+			currentVersion = 61C9EBCC292FE63B0089C0FC /* Raknati.xcdatamodel */;
+			path = Raknati.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 61C9EBB7292FE63B0089C0FC /* Project object */;
+}
