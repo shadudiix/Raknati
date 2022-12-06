@@ -1,7 +1,5 @@
 # Raknati - ركناتي
 
-Description:
-
   Since I moved to Cairo, I always forgot where I parked my car, it was funny when I was wandering the streets for half an hour looking for it.
 
   so? I used my favorite skill, finding a problem and solving it.
